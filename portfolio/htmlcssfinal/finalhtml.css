@@ -116,6 +116,7 @@ aside /* sidebar of information, on the left */
 		color: #fff;
 		font-size: 175%;
 		overflow: auto; 
+		background-color: #666;
 	}
 aside ul
 	{
