@@ -1,0 +1,948 @@
+*
+	{
+		box-sizing: border-box;
+		font-family: Helvetica, Arial, sans-serif;
+/*		border: 1px solid #000;   */
+	}
+
+/* ----------End of Universal selector---------- */
+
+header, main, nav, footer, section, article, figure, figcaption, aside
+	{
+		display: block;
+	}
+
+/* ----------End of compatibility code---------- */
+
+#wrapper /* center content within viewport */
+	{
+		width: 80%;
+		margin: 0 auto;
+	}
+a /* links are black */
+	{
+		color: #000;
+	}
+a:hover /* links are green when hovered over */
+	{
+		color: #2db92d;
+	}
+header /* top header section on all pages */
+	{
+		background-image: url(turtlethink.png);
+		background-repeat: no-repeat;
+		background-position: 5% 50%;
+		background-color: #ccc;
+		height: 17.5em;
+		padding-left: 20em;
+		text-align: center;
+		text-transform: uppercase;
+		border: 1px solid #000;
+	}
+h1
+	{
+		width: auto;
+		font-size: 375%;
+		margin: 0 auto;
+		padding: 0.75em 1em;
+	}
+
+/*--------------------------------------*/
+/* ----------Beginning of Nav---------- */
+/*--------------------------------------*/
+
+nav 
+	{
+		text-align: center;
+		background-color: #666;
+		margin-top: 16px;
+		margin-bottom: 16px;
+	}
+nav ul
+	{
+		padding: 0;
+	}
+nav a /* no underline and color is black */
+	{
+		text-decoration: none;
+		color: #fff;
+	}
+nav a:hover /* hover color is green for nav links */
+	{
+		color: #2db92d;
+	}
+nav li /* horizontal nav */
+	{
+		list-style-type: none;
+		list-style-position: outside;  
+		display: inline;
+		margin-left: 50px;
+		font-size: 130%;
+	}
+#homebtn a /* configuring the home link to look like a button */
+	{
+		background-color: #000;
+		color: #fff;
+		border-radius: 10%;
+		padding: 7px;
+	}
+#homebtn a:hover
+	{
+		color: #2db92d;
+	}
+#thispage /* highlight the page you're currently on with green text in the nav */
+	{
+		color: #2db92d;
+	}
+#mobile
+	{
+/*		display: none; */
+	}
+
+/*--------------------------------*/
+/* ----------End of Nav---------- */
+/*--------------------------------*/
+/* ----------Beginning of Aside----------*/
+/*---------------------------------------*/
+
+aside /* sidebar of information, on the left */
+	{
+		float: left;
+		width: 7em;
+		max-width: 7em;
+		padding-right: 0.5em;
+		padding-left: 0.5em;
+		text-align: center;
+		color: #fff;
+		font-size: 175%;
+		overflow: auto; 
+	}
+aside ul
+	{
+		padding-left: 0;
+		font-size: 80%;
+	}
+aside li /* no markers for lists in the sidebar */
+	{
+		list-style-type: none;
+		border-bottom: 1px solid #2db92d;
+		margin-top: 0.5em;
+		padding-bottom: 0.5em;
+	}
+aside a
+	{
+		color: #fff;
+		text-decoration: none;
+	}
+aside a:hover
+	{
+		color: #2db92d;
+	}
+aside h4 /* content starts lower in the box to make room for the bottom of page link */
+	{
+		margin-top: 2em;
+		margin-bottom: 0.5em;
+	}
+aside ol
+	{
+		font-size: 80%;
+		padding-left: 0;
+	}
+aside ol li
+	{
+		margin-bottom: 0.5em;
+
+	}
+aside hr /* add a green horizontal line between information in sidebar */
+	{
+		color: #2db92d;
+	}
+.bottomlink /* takes you to the bottom of the page */
+	{
+		font-size: 80%;
+		margin-bottom: 2em;
+	}
+/*---------------------------------*/
+/* ----------End of Aside----------*/
+/*---------------------------------*/
+/* ----------Beginning of Main---------- */
+/*---------------------------------------*/
+
+main /* entire main has a border and extends to the bottom of the floated sidebar */
+	{
+		border: 1px solid #000; 
+		margin-top: 0;
+		background-image: url(darkgreybackground.png);
+		background-size: 13em 100%;
+		background-position: top left;
+		background-repeat: repeat-y;
+	}
+#contactp /* a paragraph on the contact page */
+	{
+		text-align: center;
+	}
+#contactmain
+	{
+		background-image: none;
+	}
+section /* main word content on each page, starts down a bit and far enough in to make room for sidebar */
+	{
+		padding-left: 16em;
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
+section p /* word content in indented and spaced out */
+	{
+		text-indent: 1.5em;
+		line-height: 30px;
+		padding-right: 4em;
+	}
+.noindent
+	{
+		text-indent: 0;
+	}
+section h2
+	{
+		text-align: center;
+		font-size: 275%;
+		width: 80%;
+		margin: 0.75em auto;
+	}
+section h3
+	{
+		text-align: center;
+		margin-bottom: 2em;
+		line-height: 30px;
+		padding-right: 4em;
+	}
+section ul
+	{
+		padding-right: 4em;
+	}
+.bold /* text needing to be bolded */
+	{
+		font-weight: bold;
+	}
+.leftside /* content that is on the left side of an image */
+	{
+		width: 55%;
+		padding-right: 0;
+	}
+.leftspace /* content that makes space for an image on the left */
+	{
+		margin-top: 3em;
+		padding-left: 30em;
+	}
+#legal /* special positioning for a larger paragraph on index */
+	{
+		padding-left: 25em;
+		margin-top: 2em;
+	}
+.floatright /* image floated right */
+	{
+		float: right;
+		padding-right: 4em;
+	}
+.floatleft /* image floated left */
+	{
+		float: left;
+		padding-left: 2em;
+	}
+img /* images to stay within their borders */
+	{
+		max-width: 100%;
+		height: auto;
+	}
+figcaption /* modifying the default figure caption for smaller font and italics */
+	{
+		text-align: center;
+		font-style: italic;
+		font-size: 80%;
+		padding-top: 0.5em;
+	}
+section hr
+	{
+		color: #2db92d;
+		margin-right: 3em;
+		margin-top: 1.5em;
+	}
+dt
+	{
+		text-indent: 1em;
+		margin-top: 0.75em;
+	}
+.newpage
+	{
+		display: none;
+	}
+
+/*---------------------------------*/
+/* ----------End of Main---------- */
+/*----------------------------------------*/
+/* ----------Beginning of Table---------- */
+/*----------------------------------------*/
+
+table /* border, caption, and size settings for the overall table, green borders */
+	{
+		border: 1px solid #2db92d;
+		border-collapse: collapse;
+		caption-side: bottom;
+		width: 70%;
+		margin: 1.5em auto auto auto;
+	}
+table caption /* font settings for the table caption */
+	{
+		font-size: 80%;
+		font-style: italic;
+		padding: 1em 0 1.5em 0;
+	}
+#tablehead /* the main header settings in the table */
+	{
+		font-size: 200%;
+		background-color: #666;
+		color: #fff;
+	}
+th /* the lower headers, green borders*/
+	{
+		border: 1px solid #2db92d;
+		background-color: #ccc;
+	}
+td /* cell settings to help align floated information */
+	{
+		border: 1px solid #2db92d;
+		padding-left: 2em;
+		padding-top: 0.5em;
+		text-align: left;
+		font-weight: bold;
+	}
+td ul /* unbold the list items since the first word in each cell is bold */
+	{
+		font-weight: normal;
+	}
+
+/*----------------------------------*/
+/* ----------End of Table---------- */
+/*----------------------------------*/
+/* ----------Beginning of Form---------- */
+/*---------------------------------------*/
+
+form /* overall form settings, light gray background */
+	{
+		width: 60%;
+		margin: 3em auto;
+		background-color: #ccc;
+		padding: 2em;
+	}
+label /* float and clear labels to the left to align with each other and inputs */
+	{
+		float: left;
+		clear: left;  
+		display: block;
+		width: 10em;
+		padding-right: 1.5em;
+		margin-top: 16px;
+		text-align: right;
+	}
+input, textarea /* input and text areas to align with labels */
+	{
+		display: block;
+		margin-top: 16px;
+	}
+input[type="submit"] /* submit button to align with input/text areas */
+	{
+		margin-left: 12em;
+		font-weight: bold;
+	}
+input[type="submit"]:hover /* change the background color to dark gray and font to green when hovered */
+	{
+		background-color: #666;
+		color: #2db92d;
+		font-weight: bold;
+	}
+
+/*---------------------------------*/
+/* ----------End of Form---------- */
+/*---------------------------------*/
+/* ---------Beginning of Footer---------- */
+/*----------------------------------------*/
+
+footer /* align footer in the center */
+	{
+		text-align: center;
+	}
+footer a /* link in footer is black font */
+	{
+		color: #000;
+	}
+footer a:hover /* hover is green */
+	{
+		color: #2db92d;
+	}
+#bottomnav
+	{
+		text-align: center;
+		width: 80%;
+		margin: 0 auto;
+		clear: left;
+		padding-top: 2em;
+	}
+.nextbtn /* configures "next" link to look like a button and position it in the correct spot */
+	{
+		border: 2px solid #000;
+		border-radius: 10%;
+		background-color: #ccc;
+		color: #000;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 150%;
+		padding: 5px;
+		margin: 0 1em;
+	}
+.nextbtn a:hover
+	{
+		color: #2db92d;
+	}
+.prevbtn /* configures "previous" button like the "next" button */
+	{
+		border: 2px solid #000;
+		border-radius: 10%;
+		background-color: #ccc;
+		color: #000;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 150%;
+		padding: 5px;
+		margin: 0 1em;
+	}
+.prevbtn a:hover
+	{
+		color: #2db92d;
+	}
+#nobtn
+	{
+		visibility: hidden;
+	}
+.topbtn /* a link that looks like a button and takes you to the top header */
+	{
+		border: 2px solid #000;
+		border-radius: 10%;
+		background-color: #ccc;
+		color: #000;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 150%;
+		padding: 5px;
+		margin: 0 1em;
+	}
+.topbtn a:hover
+	{
+		color: #2db92d;
+	}
+/*-----------------------------------*/
+/* ----------End of Footer---------- */
+/*-----------------------------------*/
+/* ----------Beginning of Media Queries---------- */
+/*------------------------------------------------*/
+
+@media only screen and (min-width: 64em) and (max-width: 100em)
+	{
+		header
+			{
+				padding-left: 30%;
+			}
+		h1
+			{
+				font-size: 300%;
+				padding: 0.5em 0.5em;
+			}
+		.floatleft
+			{
+				float: none;
+			}
+		.leftspace
+			{
+				padding: 0;
+				width: 80%;
+			}
+		.leftside
+			{
+				width: 80%;
+			}
+		section
+			{
+				padding-left: 13em;
+			}
+		section h3
+			{
+				text-align: left;
+			}
+		#legal
+			{
+				padding-left: 0;
+			}
+		figcaption
+			{
+				text-align: left;
+				padding-left: 5em;
+			}
+		form
+			{
+				width: 80%;
+			}
+		main
+			{
+				background-size: 10em 100%;
+			}
+		aside
+			{
+				max-width: 6.5em;
+				width: 6.5em; 
+				font-size: 150%;
+			}
+		table
+			{
+				width: 65%;
+				margin-left: 15em;
+				margin-top: 0.5em;
+			}
+		td
+			{
+				padding-right: 0.75em;
+			}
+	}
+@media only screen and (min-width: 50em) and (max-width: 64em)
+	{
+		header
+			{
+				padding-left: 30%;
+			}
+		h1
+			{
+				font-size: 250%;
+				padding: 0.75em;
+			}
+		nav li
+			{
+				margin-left: 25px;
+				font-size: 120%;
+				word-break: keep-all;
+			}
+		main
+			{
+				background-size: 10em 100%;
+			}
+		table
+			{
+				width: 65%;
+				margin-left: 13em;
+				margin-top: 0;
+			}
+		td
+			{
+				padding-right: 0.75em;
+			}
+		aside /* sidebar of information, on the left */
+			{
+				width: 6.5em;
+				max-width: 6.5em;
+				padding-right: 0.5em;
+				padding-left: 0.5em;
+				text-align: center;
+				color: #fff;
+				font-size: 140%;
+				overflow: auto;
+			}
+		aside ul
+			{
+				padding-left: 0;
+				font-size: 80%;
+			}
+		aside ol
+			{
+				font-size: 70%;
+			}
+		section
+			{
+				padding-left: 13em;
+			}
+		section p
+			{
+				padding-right: 2em;
+			}
+		.floatright
+			{
+				float: none;
+				padding-right: 0;
+			}
+		.floatleft
+			{
+				float: none;
+				padding-left: 0;
+			}
+		.leftside /* content that is on the left side of an image */
+			{
+				width: 95%;
+				padding-right: 0;
+			}
+		.leftspace /* content that makes space for an image on the left */
+			{
+				margin-top: 3em;
+				padding-left: 0;
+			}
+		#legal
+			{
+				padding-left: 0;
+			}
+		form
+			{
+				width: 95%;
+			} 
+		label
+			{
+				font-size: 95%;
+				margin-right: 0;
+				width: 20%;
+			}
+		input, textarea
+			{
+				margin-left: 1em;
+			}
+		input[type="submit"]
+			{
+				margin-left: 11.5em;
+			}
+		section hr
+			{
+				margin-right: 2em;
+			}
+	}
+@media only screen and (min-width: 37.5em) and (max-width: 50em)
+	{
+		#wrapper
+			{
+				width: 90%;
+			}
+		header
+			{
+				padding-left: 30%;
+			}
+		h1
+			{
+				font-size: 2em;
+				width: 90%;
+				margin: 0 auto;
+				padding: 1em 1em;
+			}
+		main
+			{
+				background-size: 8em 100%;
+			}
+		section
+			{
+				padding-left: 11em;
+				padding-bottom: 1em;
+				padding-right: 1em;
+				width: 100%;
+			}
+		section p
+			{
+				padding-right: 1em;
+			}
+		.floatright
+			{
+				float: none;
+				padding-right: 0;
+			}
+		.floatleft
+			{
+				float: none;
+				padding-left: 0;
+			}
+		.leftside /* content that is on the left side of an image */
+			{
+				width: 95%;
+				padding-right: 0;
+			}
+		.leftspace /* content that makes space for an image on the left */
+			{
+				margin-top: 3em;
+				padding-left: 0;
+			}
+		#legal
+			{
+				padding-left: 0;
+			}
+		figcaption
+			{
+				text-align: left;
+				padding-left: 25%;
+			}
+		table
+			{
+				width: 70%;
+				max-width: 100%;
+				margin-left: 9em;
+				margin-top: 0.5em;
+				padding: 0;
+			}
+		td
+			{
+				padding: 0.1em;
+			} 
+		nav li
+			{
+				margin-left: 25px;
+				font-size: 120%;
+			}
+		form
+			{
+				width: 90%;
+			}
+		label
+			{
+				font-size: 95%;
+				text-align: left;
+			}
+		input[type="submit"]
+			{
+				margin-left: 0;
+			}
+		aside /* sidebar of information, on the left */
+			{
+				padding-right: 1em;
+				padding-left: 0.5em;
+				text-align: center;
+				color: #fff;
+				font-size: 120%;
+				overflow: auto;
+			}
+		aside ul
+			{
+				padding-left: 0;
+				font-size: 80%;
+			}
+		aside ol
+			{
+				font-size: 70%;
+			}
+		.prevbtn
+			{
+				font-size: 130%;
+				margin: 0 0.5em;
+			}
+		.nextbtn
+			{
+				font-size: 130%;
+				margin: 0 0.5em;
+			}
+		.topbtn
+			{
+				font-size: 130%;
+				margin: 0 0.5em;
+			}
+		section hr
+			{
+				margin-right: 1em;
+			}
+	}
+@media only screen and (max-width: 37.5em)
+	{
+		#wrapper
+			{
+				width: 95%;
+			}
+		header
+			{
+				background-size: 25%; 
+				background-position: 5% 85%;
+				width: 100%;
+				margin: 0 auto;
+				padding: 0;
+				height: 10em;
+			}
+		h1
+			{
+				font-size: 130%;
+				padding: 1em 0;
+				width: 70%;
+				float: right;
+				margin: 0 1em 0 5em;
+			}
+		nav 
+			{
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+		nav ul
+			{
+				padding: 0;
+			}
+		nav li /* horizontal nav */
+			{
+				display: block;
+				margin-left: 0;
+				font-size: 130%;
+			}
+		#homebtn a /* configuring the home link to look like a button */
+			{
+				background-color: #666;
+				color: #fff;
+				padding: 0;
+			} 
+		main
+			{
+				background-image: none;
+			}
+		aside
+			{
+				float: none;
+				background-color: #666;
+				width: 100%;
+				max-width: 100%;
+				font-size: 100%;
+				text-align: center;
+			}
+		.bottomlink
+			{
+				background-color: #666;
+				padding: 0;
+				margin: 0;
+			}
+		aside h4
+			{
+				display: none;
+			}
+		aside ul
+			{
+				display: none;
+			}
+		section
+			{
+				width: 95%;
+				padding: 0;
+				margin: 0 auto;
+				text-align: center;
+			}
+		section h2
+			{
+				font-size: 200%;
+				margin: 0.5em auto;
+			}
+		section h3
+			{
+				width: 100%;
+				padding: 0 0.5em;
+			}
+		section p
+			{
+				width: 100%;
+				margin: 1em 0;
+				text-indent: 0;
+				padding: 0 0.5em;
+			}
+		section ul, section li
+			{
+				text-align: left;
+			}
+		section hr
+			{
+				margin: 0;
+			}
+		.floatright
+			{
+				float: none;
+				padding: 0;
+			}
+		.floatleft
+			{
+				float: none;
+				padding: 0;
+			}
+		.leftside /* content that is on the left side of an image */
+			{
+				width: 100%;
+				padding: 0 0.5em;
+			}
+		.leftspace /* content that makes space for an image on the left */
+			{
+				margin-top: 3em;
+				padding: 0 0.5em;
+			}
+		#legal
+			{
+				padding: 0 0.5em;
+			}
+		table
+			{
+				width: 100%;
+				max-width: 100%;
+				margin-left: 0;
+				margin-top: 0.5em;
+				padding: 0;
+			}
+		td
+			{
+				padding: 0.5em;
+				width: 50%;
+				max-width: 50%;
+			} 
+		td ul
+			{
+				padding-top: 0;
+				padding-left: 0;
+				margin-left: 1em;
+				text-align: left;
+			}
+		table caption
+			{
+				padding: 0.5em;
+			}
+		form
+			{
+				width: 90%;
+			}
+		label
+			{
+				font-size: 95%;
+				text-align: left;
+			}
+		input, textarea
+			{
+				max-width: 100%;
+			}
+		input[type="submit"]
+			{
+				margin-left: 0;
+			}
+		.prevbtn
+			{
+				font-size: 90%;
+				margin: 0 0.45em;
+				padding: 2px;
+			}
+		.nextbtn
+			{
+				font-size: 90%;
+				margin: 0 0.45em;
+				padding: 2px;
+			}
+		.topbtn
+			{
+				font-size: 90%;
+				margin: 0 0.45em;
+				padding: 2px;
+			}
+		#bottomnav
+			{
+				width: 100%;
+				padding-top: 1em;
+			}
+		dd, dt
+			{
+				text-align: left;
+			}
+		section hr
+			{
+				margin-top: 1em;
+			}
+	}
