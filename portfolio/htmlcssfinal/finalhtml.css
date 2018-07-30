@@ -107,6 +107,7 @@ nav li /* horizontal nav */
 
 aside /* sidebar of information, on the left */
 	{
+		background-color: #666;
 		float: left;
 		width: 7em;
 		max-width: 7em;
@@ -116,7 +117,6 @@ aside /* sidebar of information, on the left */
 		color: #fff;
 		font-size: 175%;
 		overflow: auto; 
-		background-color: #666;
 	}
 aside ul
 	{
