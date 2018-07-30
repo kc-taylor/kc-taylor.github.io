@@ -1,0 +1,82 @@
+*
+	{
+		box-sizing: border-box;
+		background-color: #fff;
+		color: #000;
+	}
+/* ----------End of Universal selector---------- */
+
+header, main, nav, footer, section, article, figure, figcaption, aside
+	{
+		display: block;
+	}
+/* ----------End of compatibility code----------*/
+#wrapper
+	{
+		width: 80%;
+		margin: 0 auto;
+	}
+nav, footer, aside
+	{
+		display: none;
+	}
+h1
+	{
+		text-align: center;
+	}
+main
+	{
+		background-color: #fff;
+		border: none;
+	}
+figure
+	{
+		display: none;
+	}
+section h3
+	{
+		font-size: 150%;
+		text-indent: 1.5em;
+	}
+section p
+	{
+		text-indent: 1.5em;
+		font-size: 125%;
+	}
+table
+	{
+		border: 1px solid #000;
+		border-collapse: collapse;
+		caption-side: bottom;
+	}
+caption
+	{
+		padding: 0.5em;
+		font-style: italic;
+	}
+caption a, dt a, dd a, li a, section p a
+	{
+		text-decoration: none;
+	}
+#thead
+	{
+		border: 1px solid #000;
+	}
+th
+	{
+		border: 1px solid #000;
+		font-size: 150%;
+	}
+td
+	{
+		border: 1px solid #000;
+		padding: 0.75em;
+	}
+.newpage
+	{
+		page-break-before: always;
+	}
+.noindent
+	{
+		text-indent: 0;
+	}
