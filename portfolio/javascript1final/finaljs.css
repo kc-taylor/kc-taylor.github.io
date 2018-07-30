@@ -1,0 +1,194 @@
+/*
+Author: Kayce Taylor
+Date: 4.4.2018
+*/
+*
+	{
+		font-family: Helvetica, Arial, sans-serif;
+		box-sizing: border-box;
+	}
+#wrapper
+	{
+		width: 80%;
+		margin: 3% auto;
+	}
+body
+	{
+		background-color: #f3fcf6;
+	}
+#letsplay, #checkanswers
+	{
+		visibility: hidden;
+	}
+table
+	{
+		max-width: 50%;
+		text-align: center;
+		margin-bottom: 3em; 
+		color: #000000;
+	}
+tr
+	{
+		line-height: 2em;
+	}
+td
+	{
+		min-width: 20%;
+		text-align: center;
+		padding: .5em 2em; 
+		visibility: hidden;
+	}
+.useranswer
+	{
+		text-align: center;
+	}
+#finalp
+	{
+		font-size: 200%;
+		color: #ffd700;
+		text-align: center;
+		float: right; 
+		max-width: 40%;
+		min-width: 45%;
+		min-height: 10em; 
+		background-repeat: no-repeat;
+		background-position: center bottom;
+	}
+#game2
+	{
+		visibility: hidden;
+	}
+#column1
+	{
+		float:left;
+		max-width: 45%;
+		margin-right: 1.5em;
+	}
+#column2
+	{
+		float: right;
+		margin-left: 1.5em;
+		max-width: 45%;
+	}
+img
+	{
+		box-shadow: 3px 3px 3px #828282;
+	}
+.clearfloat
+	{
+		clear: both;
+	}
+.correctanswer
+	{
+		visibility: hidden;
+		background-color: #ffd700;
+		min-height: 3em;
+		padding-top: 1em;
+		padding-left: .5em;
+	}
+fieldset
+	{
+		border: none;
+	}
+#hiddenfoot
+	{
+		text-align: center;
+		visibility: hidden;
+	}
+button
+	{
+		border-radius: 35%;
+		background-color: #ffffff;
+	}
+a
+	{
+		color: #ffffff;
+		background-color: #000000;
+	}
+a:hover
+	{
+		color: #ff0000;
+	}
+
+/*-------- Media Queries --------*/
+
+@media only screen and (max-width: 64em)
+	{
+		#wrapper
+			{
+				width: 90%;
+				margin: 0 auto;
+			}
+		table
+			{
+				max-width: 35%;
+			}
+		tr
+			{
+				line-height: 1.5em;
+			}
+		td
+			{
+				font-size: 1em;
+			}
+		table input
+			{
+				max-width: 7em;
+			}
+		img
+			{
+				max-width: 100%;
+			}
+	}
+@media only screen and (max-width: 37.5em)
+	{
+		#wrapper
+			{
+				width: 100%;
+				margin: 0 auto;
+			}
+		table
+			{
+				max-width: 40%;
+				margin-bottom: .5em;
+			}
+		tr
+			{
+				line-height: 1em;
+			}
+		td
+			{
+				min-width: 5%;
+				padding: .25em 1em; 
+				font-size: .85em;
+			}
+		table input
+			{
+				line-height: 1em;
+				font-size: .85em;
+				max-width: 6em;
+			}
+		#finalp
+			{
+				min-width: 0;
+				max-width: 100%;
+				min-height: 0;
+				font-size: 1em;
+			}
+		#column1
+			{
+				float: none;
+				margin-right: 0;
+				max-width: 100%;
+			}
+		#column2
+			{
+				float: none;
+				margin-left: 0;
+				max-width: 100%;
+			}
+		img
+			{
+				max-width: 100%;
+			}
+	}
