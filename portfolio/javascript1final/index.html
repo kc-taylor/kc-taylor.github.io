@@ -1,1 +1,130 @@
 
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- 	Author: Kayce Taylor
+	 			Date: 4.4.2018
+		-->
+		<title>JavaScript 1 Final</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="finaljs.css">
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+	</head>
+	<body>
+		<div id="wrapper">
+			<nav>
+			</nav>
+			<header>
+				<h1>Welcome to my totally awesome JavaScript game!</h1>
+			</header>
+			<main>
+				<p id="finalp"></p>
+				<p id="firstp">
+					<label for="username">What is your name?</label>
+					<input type="text" id="username">
+				</p>
+				<p id="secondp"></p>
+				<p id="thirdp">
+					<button id="letsplay">Let's Play!</button>
+				</p>
+				<div class="tablediv">
+					<table id="fulltable">
+						<tr>
+							<td class="td1">
+								<label for="tdans0">5 + 7<br></label>
+								<input type="text" id="tdans0" class="useranswer">
+							</td>
+							<td class="td2">
+								<label for="tdans1">20 - 3<br></label>
+								<input type="text" id="tdans1" class="useranswer"></td>
+							<td class="td1">
+								<label for="tdans2">18 &lt; 2<br></label>
+								<input type="text" id="tdans2" class="useranswer"></td>
+						</tr>
+						<tr>
+							<td class="td2">
+								<label for="tdans3">12 &gt;= 7<br></label>
+								<input type="text" id="tdans3" class="useranswer"></td>
+							<td class="td1">
+								<label for="tdans4">11 % 5<br></label>
+								<input type="text" id="tdans4" class="useranswer"></td>
+							<td class="td2">
+								<label for="tdans5">6 &lt;= 6<br></label>
+								<input type="text" id="tdans5" class="useranswer"></td>
+						</tr>
+						<tr>
+							<td class="td1">
+								<label for="tdans6">3 * 4<br></label>
+								<input type="text" id="tdans6" class="useranswer"></td>
+							<td class="td2">
+								<label for="tdans7">6 &gt; 7<br></label>
+								<input type="text" id="tdans7" class="useranswer"></td>
+							<td class="td1">
+								<label for="tdans8">10 / 2<br></label>
+								<input type="text" id="tdans8" class="useranswer"></td>
+						</tr>
+					</table>
+				</div> <!-- end of table div -->
+				<button id="checkanswers">Check my answers!</button>
+				<div id="game2">
+					<h2>Let's keep playing!</h2>
+					<div id="column1">
+						<h3>In JavaScript, how do you decrement a variable by 1?</h3>
+							<fieldset id="q1">
+								<input type="radio" name="q1answer" id="correct1">x--<br>
+								<input type="radio" name="q1answer">x++<br>
+								<input type="radio" name="q1answer">x -= 2<br>
+							</fieldset>
+						<p id="explain1" class="correctanswer">Correct! &quot;x++&quot; increments a variable by 1, and &quot;x -= 2&quot; would assign x the value of x - 2.</p>
+						<h3>What symbol represents "or"?</h3>
+							<fieldset id="q2">
+								<input type="radio" name="q2answer">&amp;&amp;<br>
+								<input type="radio" name="q2answer" id="correct2">&#124;&#124;<br>
+								<input type="radio" name="q2answer">!<br>
+							</fieldset>
+						<p id="explain2" class="correctanswer">Correct! &amp;&amp; means &quot;and&quot; while ! means &quot;not&quot;.</p>
+						<h3>How do you get back the opposite value from an expression?</h3>
+							<fieldset id="q3">
+								<input type="radio" name="q3answer" id="correct3">Add &quot;-&quot; in front of the expression<br>
+								<input type="radio" name="q3answer">Use &quot;/=&quot; in your expression<br>
+								<input type="radio" name="q3answer">Use &quot;===&quot; in your expression<br>
+							</fieldset>
+						<p id="explain3" class="correctanswer">Correct! /= is used to assign the value of an operand to itself divided by another operand. === is a strict equals for both value and type.</p>
+					</div> <!-- end of column 1 div --> 
+					<div id="column2">
+						<h3>How do you say that two things are not equal?</h3>
+							<fieldset id="q4">
+								<input type="radio" name="q4answer">x != y<br>
+								<input type="radio" name="q4answer">x !== y<br>
+								<input type="radio" name="q4answer" id="correct4">both 1 and 2<br>
+							</fieldset>
+						<p id="explain4" class="correctanswer">Correct! != means 2 operands are not equal in value, and !== means they are not equal in value or type.</p>
+						<h3>What does &quot;===&quot; mean?</h3>
+							<fieldset id="q5">
+								<input type="radio" name="q5answer">The operands are not equal<br>
+								<input type="radio" name="q5answer" id="correct5">The operands are equal in both value and type<br>
+								<input type="radio" name="q5answer">It's no different than &quot;==&quot; but some people like to use 3<br>
+							</fieldset>
+						<p id="explain5" class="correctanswer">Correct! If the value of 2 operands is not equal, you would use &quot;!=&quot;. == means 2 operands are equal in value.</p>
+						<h3>How would you compound the operators for a variable that is multiplying itself with another operand?</h3>
+							<fieldset id="q6">
+								<input type="radio" name="q6answer" id="correct6">x *= y<br>
+								<input type="radio" name="q6answer">x %= y<br>
+								<input type="radio" name="q6answer">x += y<br>
+							</fieldset>
+						<p id="explain6" class="correctanswer">Correct! %= would assign the value of remainder from x divided by y to the x variable, and += would assign the value of x + y.</p>
+					</div> <!-- end of column 2 div -->
+					<br class="clearfloat">
+					<button id="lastsubmit">Submit Answers</button>
+				</div> <!-- end of 2nd game div -->
+			</main>
+			<footer id="hiddenfoot">
+				<p>
+					<a href="finalrubric.pdf" target="_blank" title="Final Requirements for JavaScript I">This final project meets these course requirements</a>
+				</p>
+			</footer>
+		</div> <!-- end of content wrapper -->
+		<script src="finaljs.js"></script>
+	</body>
+</html>
