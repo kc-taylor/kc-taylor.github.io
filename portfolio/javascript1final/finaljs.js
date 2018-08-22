@@ -148,7 +148,7 @@ Date: 4.4.2018
 // function to add celebratory image once all answers are true
 	function finalSubmit() {
 			if (correctFinal[0] && correctFinal[1] && correctFinal[2] && correctFinal[3] && correctFinal[4] && correctFinal[5] == "true") {
-					document.body.style.backgroundImage = "url('https://media.giphy.com/media/IjmMzurYulKEw/giphy.gif')";
+					document.body.style.backgroundImage = "url('http://gph.is/1aWXXo3')";
 					window.alert("Congratulations " + userName.value + ", you did it!!");
 					document.body.style.color = "#ffffff";
 			}
