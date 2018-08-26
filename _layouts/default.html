@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 	<html>
 		<head>
-      <meta charset="utf-8">
-			<title>Portfolio</title>
+			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
 		</head>
@@ -11,17 +10,17 @@
 	    		<ul>
 	        		<li><a href="/">Home</a></li>
 		        	<li><a href="/about">About</a></li>
-              		<li><a href="/portfolio">Portfolio</a></li>
+				<li><a href="/portfolio">Portfolio</a></li>
 	        		<li><a href="/blog">Blog</a></li>
 	    		</ul>
 			</nav>
 			<div class="container">
-			    
-			<!--Content-->
+			
+			{{ content }}
 			
 			</div><!-- /.container -->
 			<footer>
-                <hr>
+			<hr>
 	    		<ul>
 	        		<li><a href="mailto:kaycectaylor@gmail.com">email</a></li>
 	        		<li><a href="https://github.com/kc-taylor">github.com/kc-taylor</a></li>
