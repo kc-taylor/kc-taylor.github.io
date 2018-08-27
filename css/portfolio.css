@@ -42,7 +42,8 @@ ul li img {
     height: 100px;
     width: 100px;
     max-width: 100px;
-    padding-right: 5vw;
+    padding-right: 2vw;
+    margin-bottom: 10px;
 }
 li a {
     padding-bottom: 20px;
