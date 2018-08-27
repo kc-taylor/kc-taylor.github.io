@@ -16,6 +16,7 @@ a {
     text-decoration: none;
     color: #999;
     font-size: 1.5em;
+    vertical-align: center;
 }
 a:hover {
     text-decoration: underline;
