@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<title>AJAX Final Project</title>
+			<meta charset="UTF-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<style>
+				#wrapper {
+					width: 50%;
+					background: url('https://www.publicdomainpictures.net/pictures/210000/velka/film-banner.jpg');
+					background-size: 80% 70%;
+					background-repeat: no-repeat;
+					background-position: center 0;
+				}
+				#container {
+					width: 100%;
+					display: flex;
+				}
+				img {
+					max-width: 30%;
+					margin: 2px;
+					border-radius: 50%;
+				}
+				#posters {
+					width: 49%;
+					margin-top: 5vh;
+				}
+				#details {
+					width: 49%;
+					text-align: center;
+					border: 5px solid #293041;
+					background-color: #b0b8cd;
+					padding: 15px;
+					height: 90%;
+					vertical-align: center;
+					position: fixed;
+					right: 15px;
+					top: 2.5vh;
+					overflow: auto;
+					visibility: hidden;
+				}
+				h1 {
+					font-size: 300%;
+					padding-bottom: 1px;
+				}
+				h3 {
+					font-weight: lighter;
+					margin-top: -15px;
+				}
+				#topheader {
+					width: 80%;
+					margin: 0 auto 10px auto;
+					text-align: center;
+				}
+				#detailInfo {
+					margin-top: -15px;
+				}
+				input {
+					line-height: 1.25;
+					width: 50%;
+					margin-right: 15px;
+					margin-left: 20%
+				}
+				input:focus {
+					border: 1px solid #293041;
+				}
+				button {
+					background-color: #293041;
+					color: #b0b8cd;
+					border: 1px solid #b0b8cd;
+					padding: 3px 10px;
+				}
+				button:active {
+					background-color: #b0b8cd;
+					color: #293041;
+					border: 1px solid #293041;
+				}
+				#inputBtn {
+					width: 79.7%;
+					margin: 0 auto;
+					border: 2px solid #000;
+					padding: 5px 0;
+					background-color: #b0b8cd
+				}
+				#movieTitle {
+					font-size: 400%;
+					margin-top: 0;
+				}
+				</style>
+		</head>
+		<body>
+			<div id="wrapper">
+				<h1 id="topheader">Find a movie!</h1>
+				<div id="inputBtn">
+					<input id="movie-name" placeholder="Movie name" />
+					<button id="find">Find</button>
+				</div> <!-- end inputBtn -->
+			</div> <!-- end wrapper -->
+			<div id="container">
+				<div id="posters"></div>
+				<div id="details"></div>
+			</div> <!-- end container -->
+			<script src="index.js"></script>
+		</body>
+	</html>
