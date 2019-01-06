@@ -1,12 +1,38 @@
----
-layout: portfolio
-title: Portfolio
----
-
-<div id="portfolio">
-	<ul>
-		<li><img src="htmlcssfinal/turtlethink.png"><a href="/portfolio/htmlcssfinal">HTML and CSS Final Project</a></li>
-		<li><img src="javascript1final/fireworks.jpg"><a href="/portfolio/javascript1final">JavaScript 1 Final Project</a></li>
-		<li><img src="cssgridsproject/images/cutekitten.jpg"><a href="/portfolio/cssgridsproject">CSS Grids Project</a></li>
-	</ul>			
-</div> <!-- /#portfolio -->
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<title>Portfolio</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" type="text/css" href="../css/main.css">
+			<link rel="stylesheet" type="text/css" href="../css/print.css">
+			<link rel="icon" type="image/x-icon" href="../favicon/favicon.ico">
+		</head>
+		<body>
+			<div id="wrapper">
+				<nav>
+		    		<ul>
+		        		<li><a href="../index.html">Home</a></li>
+			        	<li><a href="../about/index.html">Résumé</a></li>
+						<li><a href="index.html" class="current">Portfolio</a></li>
+		    		</ul>
+				</nav>
+				<main>
+					<div id="portfolio">
+						<ul>
+							<li><img src="htmlcssfinal/turtlethink.png" alt="Image showing a green turtle thinking"><a href="/portfolio/htmlcssfinal">HTML and CSS Final Project</a></li>
+							<li><img src="javascript1final/fireworks.jpg" alt="Image showing fireworks"><a href="/portfolio/javascript1final">JavaScript 1 Final Project</a></li>
+							<li><img src="cssgridsproject/images/cutekitten.jpg" alt="Image showing a cute kitten"><a href="/portfolio/cssgridsproject">CSS Grids Project</a></li>
+							<li><img src="ajax/images/movie.png" alt="Image saying 'Find a movie'"><a href="/portfolio/ajax">AJAX</a></li>
+						</ul>
+					</div> <!-- end of portfolio -->
+			</main>
+			<footer>
+				<ul>
+					<li>Contact:</li>
+					<li><a href="mailto:kaycectaylor@gmail.com">Email</a></li>
+				</ul>
+			</footer>
+		</div> <!-- end of wrapper -->
+	</body>
+</html>
