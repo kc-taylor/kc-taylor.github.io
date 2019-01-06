@@ -62,8 +62,9 @@ ul li img {
     width: 100px;
     max-width: 100px;
     padding-right: 2vw;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 ul li a {
     padding-bottom: 50px;
+    vertical-align: center;
 }
