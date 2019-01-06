@@ -56,7 +56,6 @@ ul.posts li {
 ul li {
     list-style: none;
 }
-
 ul li img {
     height: 100px;
     width: 100px;
@@ -64,7 +63,7 @@ ul li img {
     padding-right: 2vw;
     margin-bottom: 10px;
 }
-ul li a {
-    padding-bottom: 50px;
-    vertical-align: center;
+.portfoliolink {
+    padding-bottom: 100px;
+	vertical-align: middle;
 }
