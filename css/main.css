@@ -68,8 +68,9 @@ table img {
     height: 100px;
     width: 100px;
     max-width: 100px;
-    margin-right: 5vw;
+    margin-right: 3.5vw;
 }
 .portfoliolink {
 	vertical-align: middle;
+	color: #666;
 }
